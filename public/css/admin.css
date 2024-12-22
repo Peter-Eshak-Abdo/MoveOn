@@ -8,6 +8,7 @@ body {
   background-image: url("../images/bgg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
   /* height: 80hv; */
 }
 .main {

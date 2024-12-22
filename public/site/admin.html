@@ -17,25 +17,14 @@
 
   <body id="body-admin">
     <div class="main">
-      <nav class="nav d-felx row justify-content-between flex-wrap pt-3">
-        <div class="nav-logo col-2">
-          <p>Move On</p>
+      <nav class="nav-trips">
+        <div class="nav-logo">
+          <a href="../index.html" id="to-home"><p>Move On</p></a>
+
         </div>
-        <div class="nav-menu col-7 text-right" id="navMenu">
-          <ul>
-            <li><a href="" class="link active">Home</a></li>
-            <li><a href="hero" class="link">Services</a></li>
-            <li><a href="review" class="link">FeedBack</a></li>
-            <li><a href="contact-us" class="link">About</a></li>
-          </ul>
+        <div class="nav-button">
+          <a href="login.html" class="btn btn-outline-danger">Log out</a>
         </div>
-        <div class="nav-button col-3">
-          <a href="login.html"> <button class="btn white-btn" onclick="login()">Sign In</button></a>
-          <a href="login.html"> <button class="btn" onclick="register()">Sign Up</button></a>
-        </div>
-        <!-- <div class="nav-menu-btn">
-    <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-</div> -->
       </nav>
       <h4 class="text-light">Portsaid-Seuz Canal Uni "SCU" trips</h4>
       <hr />
@@ -137,9 +126,9 @@
               <div class="d-inline-block"><i class="fa-solid fa-user col-1 mt-1"></i> x 52</div>
             </div>
             <div class="d-felx row flex-wrap align-content-center justify-content-around pe-4">
-              <a href="#" class="btn btn-outline-dark m-1 col-5" id="button41" onclick="changeLabel41()">confirm</a>
-              <a href="#" class="btn btn-outline-dark m-1 col-5" onclick="changeLabel4()" id="button411">cancel</a>
-              <select class="form-select btn btn-outline-dark col-5 m-1" disabled id="button42" aria-label="Default select example">
+              <a href="#" class="btn btn-outline-warning m-1 col-5" id="button41" onclick="changeLabel41()">confirm</a>
+              <a href="#" class="btn btn-outline-warning m-1 col-5" onclick="changeLabel4()" id="button411">cancel</a>
+              <select class="form-select btn btn-outline-warning col-5 m-1" disabled id="button42" aria-label="Default select example">
                 <option selected>Select bus</option>
                 <option value="1">Bus 1</option>
                 <option value="2">Bus 2</option>

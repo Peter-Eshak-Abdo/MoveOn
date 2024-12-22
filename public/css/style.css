@@ -5,12 +5,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-/* :root {
-} */
+:root {
+  --bg-color: #2a8da893;
+}
 
 /* START Login page */
 body#body-login {
-  background: url("../images/bg1.webp");
+  /* background: url("../images/bg1.webp"); */
+  background-color: var(--bg-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -52,6 +54,46 @@ body#body-login {
   padding-bottom: 15px;
   margin: 0 25px; /*space between list elemints in nav bar*/
 }
+
+.title .title-trip {
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 25px;
+  align-items: start;
+}
+.typing p::after {
+  content: " |";
+  animation-name: title;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes title {
+  0% {content: " |"}
+  4% {content: " O/"}
+  8% {content: " Ou/"}
+  12% {content: " Our/"}
+  16% {content: " Our|"}
+  20% {content: " Our D/"}
+  24% {content: " Our De/"}
+  28% {content: " Our Des/"}
+  32% {content: " OurDest/"}
+  36% {content: " Our Deste/"}
+  40% {content: " Our Deste/"}
+  44% {content: " Our Deste/"}
+  48% {content: " Our Deste/"}
+  52% {content: " T|"}
+  56% {content: " To|"}
+  60% {content: " Tof|"}
+  64% {content: " Tofa|"}
+  68% {content: " Tofa7|"}
+  72% {content: " Tofa7a"}
+  76% {content: " Tofa7a|"}
+  80% {content: " Tofa7|"}
+  84% {content: " Tofa|"}
+  88% {content: " Tof|"}
+  92% {content: " To|"}
+  96% {content: " T|"}
+  100% {content: " |"}}
 .link:hover,
 .active {
   border-bottom: 2px solid #fff; /*when hover underline will appear*/
@@ -216,6 +258,7 @@ body#body-admin {
   background-image: url("../images/bgg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
   /* height: 80hv; */
 }
 .main {
@@ -243,10 +286,29 @@ h4.head {
 
 /* START Trips Page */
 body#body-trips {
-  background: url("../images/bg1.webp");
-  background-size: cover;
+  background-color: var(--bg-color);
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  overflow: hidden;
+}
+.wrapper-trip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 110vh;
+  background: rgba(39, 39, 39, 0.4);
+}
+#to-home {
+  text-decoration: none;
+}
+.nav-trips {
+  width: 100%;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 section.sec-trips {
   width: max-content;
@@ -308,7 +370,7 @@ footer#about {
   color: black;
   background-color: #ffd806;
   /* background-color: rgba(255, 255, 255, 0.5); */
-
+width: 100%;
   /* padding: 0px; */
   text-align: center;
   height: 120px;
