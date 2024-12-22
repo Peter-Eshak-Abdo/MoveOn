@@ -23,43 +23,7 @@ function register() {
 
 const TripsData = [
   {
-    name: "3en shams",
-    imageUrl: "../images/3enshams.png",
-    timeFCTU1: ["7:30 AM", "9:00AM", "1.5"],
-    timeFCTU2: ["9:30 AM", "11:00AM", "1.5"],
-    timeFUTC1: ["3:00 PM", "4:30 PM", "1.5"],
-    timeFUTC2: ["5:00 PM", "6:30 PM", "1.5"],
-    payment: "45",
-  },
-  {
-    name: "6 October",
-    imageUrl: "../images/6october.jpeg",
-    timeFCTU1: ["7:00 AM", "9:00AM", "2"],
-    timeFCTU2: ["9:00 AM", "11:00AM", "2"],
-    timeFUTC1: ["3:00 PM", "5:00 PM", "2"],
-    timeFUTC2: ["5:00 PM", "7:00 PM", "2"],
-    payment: "75",
-  },
-  {
-    name: "Al Azhar",
-    imageUrl: "../images/al-azhar.jpeg",
-    timeFCTU1: ["7:15 AM", "9:00AM", "1.75"],
-    timeFCTU2: ["9:15 AM", "11:00AM", "1.75"],
-    timeFUTC1: ["3:00 PM", "4:45 PM", "1.75"],
-    timeFUTC2: ["5:00 PM", "6:45 PM", "1.75"],
-    payment: "50",
-  },
-  {
-    name: "Alex",
-    imageUrl: "../images/alex.jpg",
-    timeFCTU1: ["4:00 AM", "9:00AM", "5"],
-    timeFCTU2: ["6:00 AM", "11:00AM", "5"],
-    timeFUTC1: ["3:00 PM", "8:00 PM", "5"],
-    timeFUTC2: ["5:00 PM", "10:00 PM", "5"],
-    payment: "120",
-  },
-  {
-    name: "Borsaid",
+    name: "National Borsaid",
     imageUrl: "../images/borsaid.jpg",
     timeFCTU1: ["7:45 AM", "9:00AM", "1.25"],
     timeFCTU2: ["9:45 AM", "11:00AM", "1.25"],
@@ -68,7 +32,7 @@ const TripsData = [
     payment: "35",
   },
   {
-    name: "Domuat",
+    name: "Horas",
     imageUrl: "../images/domuat.jpeg",
     timeFCTU1: ["7:15 AM", "9:00AM", "1.75"],
     timeFCTU2: ["9:15 AM", "11:00AM", "1.75"],
@@ -77,7 +41,7 @@ const TripsData = [
     payment: "55",
   },
   {
-    name: "Egypt",
+    name: "Sina",
     imageUrl: "../images/egypt.jpg",
     timeFCTU1: ["7:15 AM", "9:00AM", "1.75"],
     timeFCTU2: ["9:15 AM", "11:00AM", "1.75"],
@@ -86,43 +50,7 @@ const TripsData = [
     payment: "55",
   },
   {
-    name: "Hlwan",
-    imageUrl: "../images/hlwan.jpeg",
-    timeFCTU1: ["7:00 AM", "9:00AM", "2"],
-    timeFCTU2: ["9:00 AM", "11:00AM", "2"],
-    timeFUTC1: ["3:00 PM", "5:00 PM", "2"],
-    timeFUTC2: ["5:00 PM", "7:00 PM", "2"],
-    payment: "65",
-  },
-  {
-    name: "Mansora",
-    imageUrl: "../images/mansora.jpeg",
-    timeFCTU1: ["7:00 AM", "9:00AM", "2"],
-    timeFCTU2: ["9:00 AM", "11:00AM", "2"],
-    timeFUTC1: ["3:00 PM", "5:00 PM", "2"],
-    timeFUTC2: ["5:00 PM", "7:00 PM", "2"],
-    payment: "75",
-  },
-  {
-    name: "Monofia",
-    imageUrl: "../images/monofia.jpeg",
-    timeFCTU1: ["6:45 AM", "9:00AM", "2.25"],
-    timeFCTU2: ["8:45 AM", "11:00AM", "2.25"],
-    timeFUTC1: ["3:00 PM", "5:15 PM", "2.25"],
-    timeFUTC2: ["5:00 PM", "7:15 PM", "2.25"],
-    payment: "85",
-  },
-  {
-    name: "MUST",
-    imageUrl: "../images/must.jpeg",
-    timeFCTU1: ["7:45 AM", "9:00AM", "1.25"],
-    timeFCTU2: ["9:45 AM", "11:00AM", "1.25"],
-    timeFUTC1: ["3:00 PM", "4:15 PM", "1.25"],
-    timeFUTC2: ["5:00 PM", "6:15 PM", "1.25"],
-    payment: "35",
-  },
-  {
-    name: "Suze",
+    name: "Al-delta",
     imageUrl: "../images/suze.jpg",
     timeFCTU1: ["7:45 AM", "9:00AM", "1.25"],
     timeFCTU2: ["9:45 AM", "11:00AM", "1.25"],
@@ -131,7 +59,7 @@ const TripsData = [
     payment: "35",
   },
   {
-    name: "Zgazeg",
+    name: "Ismailia Alya",
     imageUrl: "../images/zgazeg.jpg",
     timeFCTU1: ["7:30 AM", "9:00AM", "1.5"],
     timeFCTU2: ["9:30 AM", "11:00AM", "1.5"],
@@ -145,7 +73,7 @@ const section = document.getElementById("sec");
 
 for (let i = 0; i < TripsData.length; i++) {
   const card = document.createElement("div");
-  card.classList.add("card", "m-lg-5");
+  card.classList.add("card", "m-lg-4");
   card.style.width = "18rem";
 
   card.innerHTML = `

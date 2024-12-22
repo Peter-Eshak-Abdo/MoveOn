@@ -11,6 +11,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/404545db46.js" crossorigin="anonymous"></script>
+
   </head>
   <body id="body-trips">
     <header>
@@ -20,60 +22,27 @@
         </div>
         <div class="nav-menu col-7 text-right" id="navMenu">
           <ul>
-            <li><a href="home.html" class="link active">Home</a></li>
-            <li><a href="home.html#why-us" class="link">Services</a></li>
-            <li><a href="home.html#review" class="link">FeedBack</a></li>
-            <li><a href="home.html#contact-us" class="link">About</a></li>
+            <li><a href="../index.html" class="link active">Home</a></li>
+            <li><a href="../index.html#why-us" class="link">Services</a></li>
+            <li><a href="../index.html#review" class="link">FeedBack</a></li>
+            <li><a href="../index.html#contact-us" class="link">About</a></li>
           </ul>
         </div>
         <div class="nav-button col-3">
-          <a href="../index.html"> <button class="btn white-btn" onclick="login()">Sign In</button></a>
-          <a href="../index.html"> <button class="btn" onclick="register()">Sign Up</button></a>
+          <a href="login.html"> <button class="btn btn-danger" >Log out</button></a>
         </div>
       </nav>
     </header>
 
     <section class="d-flex flex-lg-row flex-sm-column flex-nowrap overflow-auto sec-trips" id="sec"></section>
 
-    <footer class="fixed-bottom" id="about">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>الاسماء:</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">حنين وائل علي</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">رؤي عاطف ابراهيم</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">ضحي عصام</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">بيتر اسحاق</a></li>
-          </ul>
-        </div>
+    <footer id="about" class="custom-footer text-center py-4">
+      <p>&copy; 2024 Move On. All Rights Reserved.</p>
 
-        <div class="col-md-6 offset-md-1 mb-3 ms-5">
-          <form>
-            <h5>Subscribe to our Move On Trips</h5>
-            <p>Monthly digest of what's new and exciting from us.</p>
-            <strong>But also its fake website so we didn't need your email</strong>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="input-field" placeholder="Email address" disabled />
-              <button class="btn-information" type="button">Subscribe</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
-        <p>&copy; 2024 MoveOn, Inc. All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="link-body-emphasis" href="#" title="Twitter Account"><svg class="bi" width="24" height="24"><use xlink:href="#twitter" /></svg></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-body-emphasis" href="#" title="Instagram Account"><svg class="bi" width="24" height="24"><use xlink:href="#instagram" /></svg></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-body-emphasis" href="#" title="FAcebook Account"><svg class="bi" width="24" height="24"><use xlink:href="#facebook" /></svg></a>
-          </li>
-        </ul>
+      <div class="social-media-icons">
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook fa-lg"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-twitter fa-lg"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram fa-lg"></i></a>
       </div>
     </footer>
     <script
