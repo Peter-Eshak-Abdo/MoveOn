@@ -55,45 +55,6 @@ body#body-login {
   margin: 0 25px; /*space between list elemints in nav bar*/
 }
 
-.title .title-trip {
-  font-size: 54px;
-  font-weight: 900;
-  letter-spacing: 25px;
-  align-items: start;
-}
-.typing p::after {
-  content: " |";
-  animation-name: title;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@keyframes title {
-  0% {content: " |"}
-  4% {content: " O/"}
-  8% {content: " Ou/"}
-  12% {content: " Our/"}
-  16% {content: " Our|"}
-  20% {content: " Our D/"}
-  24% {content: " Our De/"}
-  28% {content: " Our Des/"}
-  32% {content: " OurDest/"}
-  36% {content: " Our Deste/"}
-  40% {content: " Our Deste/"}
-  44% {content: " Our Deste/"}
-  48% {content: " Our Deste/"}
-  52% {content: " T|"}
-  56% {content: " To|"}
-  60% {content: " Tof|"}
-  64% {content: " Tofa|"}
-  68% {content: " Tofa7|"}
-  72% {content: " Tofa7a"}
-  76% {content: " Tofa7a|"}
-  80% {content: " Tofa7|"}
-  84% {content: " Tofa|"}
-  88% {content: " Tof|"}
-  92% {content: " To|"}
-  96% {content: " T|"}
-  100% {content: " |"}}
 .link:hover,
 .active {
   border-bottom: 2px solid #fff; /*when hover underline will appear*/
@@ -255,11 +216,12 @@ header.login-page {
 /* END Login page */
 /* START Admin Page */
 body#body-admin {
-  background:var(--bg-color);
+  background: var(--bg-color);
   /* height: 80hv; */
+  overflow: hidden;
 }
 .main {
-  height: 600px;
+  /* height: 600px; */
   background-color: #00000053;
 }
 
@@ -284,9 +246,8 @@ footer {
   padding: 0px;
   text-align: center;
   align-items: end;
-
 }
-#body-admin button{
+#body-admin button {
   font-size: 13px;
 }
 
@@ -322,6 +283,99 @@ body#body-trips {
   flex-direction: row;
   justify-content: space-around;
 }
+.title .title-trip {
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 25px;
+  align-items: start;
+}
+.title .title-trip::after {
+  content: " |";
+  animation-name: title;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes title {
+  0% {
+    content: " Our| |";
+  }
+  4% {
+    content: " Our|||";
+  }
+  8% {
+    content: " Our  | ";
+  }
+  12% {
+    content: " Our D/";
+  }
+  16% {
+    content: " Our De/";
+  }
+  20% {
+    content: " Our Des/";
+  }
+  24% {
+    content: " Our Dest/";
+  }
+  28% {
+    content: " Our Deste/";
+  }
+  32% {
+    content: " Our Desten/";
+  }
+  36% {
+    content: " Our Destena/";
+  }
+  40% {
+    content: " Our Destenat/";
+  }
+  44% {
+    content: " Our Destenati/";
+  }
+  48% {
+    content: " Our Destenatio/";
+  }
+  52% {
+    content: " Our Destenation|";
+  }
+  56% {
+    content: " Our Destenatio\\";
+  }
+  60% {
+    content: " Our Destenati\\";
+  }
+  64% {
+    content: " Our Destenat\\";
+  }
+  68% {
+    content: " Our Destena\\";
+  }
+  72% {
+    content: " Our Desten\\";
+  }
+  76% {
+    content: " Our Deste\\";
+  }
+  80% {
+    content: " Our Dest\\";
+  }
+  84% {
+    content: " Our Des\\";
+  }
+  88% {
+    content: " Our De\\";
+  }
+  92% {
+    content: " Our D\\";
+  }
+  96% {
+    content: " Our |||";
+  }
+  100% {
+    content: " Our | |";
+  }
+}
+
 section.sec-trips {
   width: max-content;
   background-repeat: no-repeat;
@@ -382,13 +436,12 @@ footer#about {
   color: black;
   background-color: #ffd806;
   /* background-color: rgba(255, 255, 255, 0.5); */
-width: 100%;
+  width: 100%;
   /* padding: 0px; */
   text-align: center;
   height: 120px;
   position: relative;
   bottom: 10;
-
 }
 
 .input-field {
@@ -409,6 +462,7 @@ width: 100%;
   color: rgba(0, 0, 0, 0.877);
 }
 /* END Trips Page */
-footer i{
+footer i {
   color: #2e2e2e !important;
 }
+
