@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* :root {
+} */
+
+/* START Login page */
+body#body-login {
+  background: url("../images/bg1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  background: rgba(39, 39, 39, 0.4);
+}
+.wrapper .nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* height: 100px; */
+  line-height: 100px;
+  background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+  /* z-index: 100; */
+}
+.nav-logo p {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.nav-menu ul {
+  display: flex; /*عرض عناصر القايمه بالعرض */
+}
+.nav-menu ul li {
+  list-style-type: none; /*عشان امنع من ظهور اي ستايل حتي النقطه اللي قبل كل عنصر*/
+}
+.nav-menu ul li .link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+  margin: 0 25px; /*space between list elemints in nav bar*/
+}
+.link:hover,
+.active {
+  border-bottom: 2px solid #fff; /*when hover underline will appear*/
+}
+.nav-button .btn {
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer; /*when hover mouse>> pointer*/
+  transition: 0.3s ease; /*time for hover*/
+  margin-left: 15px; /*space between sign in and up btns*/
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.btn.white-btn {
+  background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn {
+  display: none;
+}
+.form-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 512px;
+  height: 450px; */
+  min-width: 515px;
+  min-height: 550px;
+  height: fit-content;
+  width: fit-content;
+  max-width: 600px;
+  max-height: 600px;
+  overflow: hidden;
+  /* z-index: 2; */
+}
+.login-container {
+  position: absolute;
+  left: 4px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+.register-container {
+  position: absolute;
+  right: -520px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+.top span {
+  color: #fff;
+  font-size: small;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.top span a {
+  font-weight: 500;
+  color: #fff;
+  margin-left: 5px;
+}
+
+header.login-page {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+.tybe {
+  display: flex;
+  position: relative;
+  /* top: -35px; */
+  /* left: 17px; */
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.type .type-field {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  height: 35px;
+  margin-top: 10px;
+  width: 40%;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+  margin-left: 40px;
+}
+.type-field:hover {
+  background: rgba(255, 255, 255, 0.572);
+  color: rgba(0, 0, 0, 0.802);
+}
+.two-forms {
+  display: flex;
+  gap: 10px;
+}
+.input-field {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+}
+.input-field:hover,
+.input-field:focus {
+  background: rgba(247, 243, 243, 0.843);
+  color: rgba(0, 0, 0, 0.877);
+}
+
+.input-box:focus-within i {
+  color: black; /* Change icon color when input is focused */
+}
+
+::-webkit-input-placeholder {
+  color: #fff; /*change color of place holder ya gma3aa*/
+}
+.input-box i {
+  position: relative;
+  top: -35px;
+  left: 17px;
+  color: #fff;
+}
+
+.additions {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: small;
+  margin-top: 10px;
+}
+.additions .one {
+  display: flex;
+}
+.two label a {
+  text-decoration: none;
+  color: #fff;
+}
+.two label a:hover {
+  text-decoration: underline;
+}
+
+/* END Login page */
+/* START Admin Page */
+body#body-admin {
+  background-image: url("../images/bgg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 80hv; */
+}
+.main {
+  height: 100%;
+  background-color: #00000053;
+}
+h4.head {
+  background: #ffffffe1;
+  border-bottom: 2px solid #303030;
+}
+.card {
+  width: 18rem;
+  background-color: rgba(255, 255, 255, 0.882);
+}
+.sticky-bottom i {
+  font-size: 30px;
+}
+.sticky-bottom button {
+  border: 5px;
+  border-radius: 50%;
+  font-size: large;
+}
+
+/* END Admin Page */
+
+/* START Trips Page */
+body#body-trips {
+  background: url("../images/bg1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+section.sec-trips {
+  width: max-content;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: 68px;
+  padding-top: 50px;
+  padding-bottom: 52px;
+}
+.btn-about,
+.btn-log-out,
+.btn-information {
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 15px;
+}
+.btn-about {
+  background: rgba(255, 255, 255, 0.8);
+}
+.btn-about:hover {
+  background: rgba(0, 255, 255, 0.7);
+}
+.btn-log-out {
+  background: rgba(255, 0, 0, 0.6);
+}
+.btn-log-out:hover {
+  background: rgba(255, 0, 0, 0.9);
+}
+.btn-information {
+  background-color: rgba(41, 109, 255, 0.2);
+}
+.btn-information:hover {
+  background-color: rgba(41, 109, 255, 0.9);
+  color: white;
+}
+nav.navbar {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+}
+img.card-img-top {
+  max-width: 250px;
+  max-height: 250px;
+  margin: auto;
+  border-radius: 8px;
+  padding: 3px;
+}
+footer#about {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 15px 100px;
+  color: white;
+}
+
+.input-field {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+}
+.input-field:hover,
+.input-field:focus {
+  background: rgba(247, 243, 243, 0.843);
+  color: rgba(0, 0, 0, 0.877);
+}
+/* END Trips Page */
+
