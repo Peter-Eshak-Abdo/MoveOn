@@ -14,30 +14,21 @@
   </head>
   <body id="body-trips">
     <header>
-      <nav class="navbar navbar-expand-lg shadow-lg py-1 px-3 rounded fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../images/ismailia1.png" alt="Logo" width="50" height="50" class="d-inline-block" />
-            Move On
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"></li>
-            </ul>
-            <a href="#about"><button type="button" class="btn-about me-5">About Us</button></a>
-            <a href="../index.html"><button type="button" class="btn-log-out">Log Out</button></a>
-          </div>
+      <nav class="nav d-felx row justify-content-between flex-wrap pt-3">
+        <div class="nav-logo col-2">
+          <p>Move On</p>
+        </div>
+        <div class="nav-menu col-7 text-right" id="navMenu">
+          <ul>
+            <li><a href="home.html" class="link active">Home</a></li>
+            <li><a href="home.html#why-us" class="link">Services</a></li>
+            <li><a href="home.html#review" class="link">FeedBack</a></li>
+            <li><a href="home.html#contact-us" class="link">About</a></li>
+          </ul>
+        </div>
+        <div class="nav-button col-3">
+          <a href="../index.html"> <button class="btn white-btn" onclick="login()">Sign In</button></a>
+          <a href="../index.html"> <button class="btn" onclick="register()">Sign Up</button></a>
         </div>
       </nav>
     </header>

@@ -247,7 +247,6 @@ body#body-trips {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow: hidden;
 }
 section.sec-trips {
   width: max-content;
@@ -305,12 +304,9 @@ img.card-img-top {
   padding: 3px;
 }
 footer#about {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   padding: 15px 100px;
-  color: white;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .input-field {
