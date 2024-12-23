@@ -221,7 +221,8 @@ body#body-admin {
   overflow: hidden;
 }
 .main {
-  height: 600px;
+  /* height: 600px; */
+  height: 100vh;
   background-color: #00000053;
 }
 
