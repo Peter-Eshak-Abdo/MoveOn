@@ -153,6 +153,10 @@ p {
 #review {
   padding-bottom: 300px;
 }
+#review img{
+  width: 70px;
+  height: 70px;
+}
 
 #contact-us {
   padding: 50px 7%;
