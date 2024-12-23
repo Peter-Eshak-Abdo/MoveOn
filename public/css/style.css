@@ -55,45 +55,6 @@ body#body-login {
   margin: 0 25px; /*space between list elemints in nav bar*/
 }
 
-.title .title-trip {
-  font-size: 54px;
-  font-weight: 900;
-  letter-spacing: 25px;
-  align-items: start;
-}
-.typing p::after {
-  content: " |";
-  animation-name: title;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@keyframes title {
-  0% {content: " |"}
-  4% {content: " O/"}
-  8% {content: " Ou/"}
-  12% {content: " Our/"}
-  16% {content: " Our|"}
-  20% {content: " Our D/"}
-  24% {content: " Our De/"}
-  28% {content: " Our Des/"}
-  32% {content: " OurDest/"}
-  36% {content: " Our Deste/"}
-  40% {content: " Our Deste/"}
-  44% {content: " Our Deste/"}
-  48% {content: " Our Deste/"}
-  52% {content: " T|"}
-  56% {content: " To|"}
-  60% {content: " Tof|"}
-  64% {content: " Tofa|"}
-  68% {content: " Tofa7|"}
-  72% {content: " Tofa7a"}
-  76% {content: " Tofa7a|"}
-  80% {content: " Tofa7|"}
-  84% {content: " Tofa|"}
-  88% {content: " Tof|"}
-  92% {content: " To|"}
-  96% {content: " T|"}
-  100% {content: " |"}}
 .link:hover,
 .active {
   border-bottom: 2px solid #fff; /*when hover underline will appear*/
@@ -255,8 +216,9 @@ header.login-page {
 /* END Login page */
 /* START Admin Page */
 body#body-admin {
-  background:var(--bg-color);
+  background: var(--bg-color);
   /* height: 80hv; */
+  overflow: hidden;
 }
 .main {
   height: 600px;
@@ -284,24 +246,18 @@ footer {
   padding: 0px;
   text-align: center;
   align-items: end;
-
 }
-#body-admin button{
+#body-admin button {
   font-size: 13px;
 }
-
 footer p {
   color: #2e2e2e !important;
 }
-
 /* END Admin Page */
 
 /* START Trips Page */
 body#body-trips {
   background-color: var(--bg-color);
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
   overflow: hidden;
 }
 .wrapper-trip {
@@ -322,18 +278,96 @@ body#body-trips {
   flex-direction: row;
   justify-content: space-around;
 }
+
+.title .title-trip::after {
+  content: " |";
+  animation-name: title;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes title {
+  0% {
+    content: " Our| |";
+  }
+  4% {
+    content: " Our|||";
+  }
+  8% {
+    content: " Our D/";
+  }
+  12% {
+    content: " Our De/";
+  }
+  16% {
+    content: " Our Des/";
+  }
+  20% {
+    content: " Our Dest/";
+  }
+  24% {
+    content: " Our Deste/";
+  }
+  28% {
+    content: " Our Desten/";
+  }
+  32% {
+    content: " Our Destena/";
+  }
+  36% {
+    content: " Our Destenat/";
+  }
+  40% {
+    content: " Our Destenati/";
+  }
+  44% {
+    content: " Our Destenatio/";
+  }
+  48% {
+    content: " Our Destenation/ ";
+  }
+  52% {
+    content: " Our Destenations|";
+  }
+  56% {
+    content: " Our Destenatio\\";
+  }
+  60% {
+    content: " Our Destenati\\";
+  }
+  64% {
+    content: " Our Destenat\\";
+  }
+  68% {
+    content: " Our Destena\\";
+  }
+  72% {
+    content: " Our Desten\\";
+  }
+  76% {
+    content: " Our Deste\\";
+  }
+  80% {
+    content: " Our Dest\\";
+  }
+  84% {
+    content: " Our Des\\";
+  }
+  88% {
+    content: " Our De\\";
+  }
+  92% {
+    content: " Our D\\";
+  }
+  96% {
+    content: " Our|||";
+  }
+  100% {
+    content: " Our | ";
+  }
+}
 section.sec-trips {
   width: max-content;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  margin-top: 68px;
-  padding-top: 50px;
-  padding-bottom: 52px;
 }
-.btn-about,
-.btn-log-out,
 .btn-information {
   width: 130px;
   height: 40px;
@@ -344,18 +378,6 @@ section.sec-trips {
   transition: 0.3s ease;
   margin-left: 15px;
 }
-.btn-about {
-  background: rgba(255, 255, 255, 0.8);
-}
-.btn-about:hover {
-  background: rgba(0, 255, 255, 0.7);
-}
-.btn-log-out {
-  background: rgba(255, 0, 0, 0.6);
-}
-.btn-log-out:hover {
-  background: rgba(255, 0, 0, 0.9);
-}
 .btn-information {
   background-color: rgba(41, 109, 255, 0.2);
 }
@@ -364,10 +386,6 @@ section.sec-trips {
   color: white;
 }
 nav.navbar {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   z-index: 10;
 }
 img.card-img-top {
@@ -382,33 +400,14 @@ footer#about {
   color: black;
   background-color: #ffd806;
   /* background-color: rgba(255, 255, 255, 0.5); */
-width: 100%;
+  width: 100%;
   /* padding: 0px; */
   text-align: center;
   height: 120px;
-  position: relative;
-  bottom: 10;
-
 }
 
-.input-field {
-  font-size: 15px;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  height: 50px;
-  width: 100%;
-  padding: 0 10px 0 45px;
-  border: none;
-  border-radius: 30px;
-  outline: none;
-  transition: 0.2s ease;
-}
-.input-field:hover,
-.input-field:focus {
-  background: rgba(247, 243, 243, 0.843);
-  color: rgba(0, 0, 0, 0.877);
-}
 /* END Trips Page */
-footer i{
+footer i {
   color: #2e2e2e !important;
 }
+
