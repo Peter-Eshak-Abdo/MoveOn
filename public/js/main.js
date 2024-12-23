@@ -190,7 +190,7 @@ for (let i = 0; i < TripsData.length; i++) {
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <h4 class="mb-3">Payment ${TripsData[i].payment}$</h4>
+                  <h4 class="mb-3">Payment ${TripsData[i].payment}LE</h4>
 
                   <div class="my-3">
                     <div class="form-check">
