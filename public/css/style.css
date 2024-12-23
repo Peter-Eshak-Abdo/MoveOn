@@ -278,7 +278,12 @@ body#body-trips {
   flex-direction: row;
   justify-content: space-around;
 }
-
+.title .title-trip {
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 25px;
+  align-items: start;
+}
 .title .title-trip::after {
   content: " |";
   animation-name: title;
