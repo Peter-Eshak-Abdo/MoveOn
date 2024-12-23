@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/fontAwesome/all.css" />
+    <link rel="stylesheet" href="../css/admin.css">
+
   </head>
 
   <body id="body-admin">
@@ -26,7 +28,7 @@
           <a href="login.html" class="btn btn-outline-danger">Log out</a>
         </div>
       </nav>
-      <h4 class="text-light">Portsaid-Seuz Canal Uni "SCU" trips</h4>
+      <h4 class="text-light text-center">Portsaid-Seuz Canal Uni "SCU" trips</h4>
       <hr />
       <div class="d-felx flex-wrap row trips justify-content-around">
         <div class="card col-5 m-2">
@@ -45,9 +47,9 @@
               <div class="d-inline-block"><i class="fa-solid fa-user col-1 mt-1"></i> x 52</div>
             </div>
             <div class="d-felx row flex-wrap align-content-center justify-content-around pe-4">
-              <a href="#" class="btn btn-outline-warning m-1 col-5" id="button1" onclick="changeLabel1()">confirm</a>
-              <a href="#" class="btn btn-outline-warning m-1 col-5" onclick="changeLabel()" id="button11">cancel</a>
-              <select class="form-select btn btn-outline-warning col-5 m-1" disabled id="button2" aria-label="Default select example">
+              <button href="#" class="btn btn-warning m-1 col-5" id="button1" onclick="changeLabel1()">confirm</button>
+              <button href="#" class="btn btn-warning m-1 col-5" onclick="changeLabel()" id="button11">cancel</button>
+              <select class="form-select btn btn-warning col-5 m-1" disabled id="button2" aria-label="Default select example">
                 <option selected>Select bus</option>
                 <option value="1">Bus 1</option>
                 <option value="2">Bus 2</option>
@@ -72,9 +74,9 @@
               <div class="d-inline-block"><i class="fa-solid fa-user col-1 mt-1"></i> x 52</div>
             </div>
             <div class="d-felx row flex-wrap align-content-center justify-content-around pe-4">
-              <a href="#" class="btn btn-outline-warning m-1 col-5" id="button21" onclick="changeLabel21()">confirm</a>
-              <a href="#" class="btn btn-outline-warning m-1 col-5" onclick="changeLabel2()" id="button211">cancel</a>
-              <select class="form-select btn btn-outline-warning col-5 m-1" disabled id="button22" aria-label="Default select example">
+              <button href="#" class="btn btn-warning m-1 col-5" id="button21" onclick="changeLabel21()">confirm</button>
+              <button href="#" class="btn btn-warning m-1 col-5" onclick="changeLabel2()" id="button211">cancel</button>
+              <select class="form-select btn btn-warning col-5 m-1" disabled id="button22" aria-label="Default select example">
                 <option selected>Select bus</option>
                 <option value="1">Bus 1</option>
                 <option value="2">Bus 2</option>
@@ -99,9 +101,9 @@
               <div class="d-inline-block"><i class="fa-solid fa-user col-1 mt-1"></i> x 52</div>
             </div>
             <div class="d-felx row flex-wrap align-content-center justify-content-around pe-4">
-              <a href="#" class="btn btn-outline-warning m-1 col-5" id="button31" onclick="changeLabel31()">confirm</a>
-              <a href="#" class="btn btn-outline-warning m-1 col-5" onclick="changeLabel3()" id="button311">cancel</a>
-              <select class="form-select btn btn-outline-warning col-5 m-1" disabled id="button32" aria-label="Default select example">
+              <button href="#" class="btn btn-warning m-1 col-5" id="button31" onclick="changeLabel31()">confirm</button>
+              <button href="#" class="btn btn-warning m-1 col-5" onclick="changeLabel3()" id="button311">cancel</button>
+              <select class="form-select btn btn-warning col-5 m-1" disabled id="button32" aria-label="Default select example">
                 <option selected>Select bus</option>
                 <option value="1">Bus 1</option>
                 <option value="2">Bus 2</option>
@@ -126,9 +128,9 @@
               <div class="d-inline-block"><i class="fa-solid fa-user col-1 mt-1"></i> x 52</div>
             </div>
             <div class="d-felx row flex-wrap align-content-center justify-content-around pe-4">
-              <a href="#" class="btn btn-outline-warning m-1 col-5" id="button41" onclick="changeLabel41()">confirm</a>
-              <a href="#" class="btn btn-outline-warning m-1 col-5" onclick="changeLabel4()" id="button411">cancel</a>
-              <select class="form-select btn btn-outline-warning col-5 m-1" disabled id="button42" aria-label="Default select example">
+              <button href="#" class="btn btn-warning m-1 col-5" id="button41" onclick="changeLabel41()">confirm</button>
+              <button href="#" class="btn btn-warning m-1 col-5" onclick="changeLabel4()" id="button411">cancel</button>
+              <select class="form-select btn btn-warning col-5 m-1" disabled id="button42" aria-label="Default select example">
                 <option selected>Select bus</option>
                 <option value="1">Bus 1</option>
                 <option value="2">Bus 2</option>
@@ -138,14 +140,26 @@
           </div>
         </div>
       </div>
+
+      <nav class="mt-5 sticky-bottom text-end">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="admin_trip_form.html" title="Add Trip">
+            <button type="button " class="align-bottom m-4 btn btn-warning" title="Add Trip"><i class="fa-solid fa-plus "></i></button>
+          </a>
+        </div>
+      </nav>
     </div>
-    <nav class="sticky-bottom text-end">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="admin_trip_form.html" title="Add Trip">
-          <button type="button" class="align-bottom m-4" title="Add Trip"><i class="fa-solid fa-plus p-2"></i></button>
-        </a>
+   
+    
+    <footer class="custom-footer text-center py-4 align-bottom">
+      <p>&copy; 2024 Move On. All Rights Reserved.</p>
+
+      <div class="social-media-icons">
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook fa-lg"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-twitter fa-lg"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram fa-lg"></i></a>
       </div>
-    </nav>
+    </footer>
     <script src="../js/admin.js"></script>
   </body>
 </html>

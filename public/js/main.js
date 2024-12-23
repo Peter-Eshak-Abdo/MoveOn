@@ -23,8 +23,8 @@ function register() {
 
 const TripsData = [
   {
-    name: "National Borsaid",
-    imageUrl: "../images/borsaid.jpg",
+    name: "East Portsaid National Uni",
+    imageUrl: "../images/epu.jpg",
     timeFCTU1: ["7:45 AM", "9:00AM", "1.25"],
     timeFCTU2: ["9:45 AM", "11:00AM", "1.25"],
     timeFUTC1: ["3:00 PM", "4:15 PM", "1.25"],
@@ -32,8 +32,8 @@ const TripsData = [
     payment: "35",
   },
   {
-    name: "Horas",
-    imageUrl: "../images/domuat.jpeg",
+    name: "Horus",
+    imageUrl: "../images/hue.png",
     timeFCTU1: ["7:15 AM", "9:00AM", "1.75"],
     timeFCTU2: ["9:15 AM", "11:00AM", "1.75"],
     timeFUTC1: ["3:00 PM", "4:45 PM", "1.75"],
@@ -41,8 +41,8 @@ const TripsData = [
     payment: "55",
   },
   {
-    name: "Sina",
-    imageUrl: "../images/egypt.jpg",
+    name: "Sinai",
+    imageUrl: "../images/su.png",
     timeFCTU1: ["7:15 AM", "9:00AM", "1.75"],
     timeFCTU2: ["9:15 AM", "11:00AM", "1.75"],
     timeFUTC1: ["3:00 PM", "4:45 PM", "1.75"],
@@ -51,7 +51,7 @@ const TripsData = [
   },
   {
     name: "Al-delta",
-    imageUrl: "../images/suze.jpg",
+    imageUrl: "../images/epu.jpg",
     timeFCTU1: ["7:45 AM", "9:00AM", "1.25"],
     timeFCTU2: ["9:45 AM", "11:00AM", "1.25"],
     timeFUTC1: ["3:00 PM", "4:15 PM", "1.25"],
@@ -59,8 +59,8 @@ const TripsData = [
     payment: "35",
   },
   {
-    name: "Ismailia Alya",
-    imageUrl: "../images/zgazeg.jpg",
+    name: "Seuz canal Uni",
+    imageUrl: "../images/scu.jpg",
     timeFCTU1: ["7:30 AM", "9:00AM", "1.5"],
     timeFCTU2: ["9:30 AM", "11:00AM", "1.5"],
     timeFUTC1: ["3:00 PM", "4:30 PM", "1.5"],
